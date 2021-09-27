@@ -1,4 +1,4 @@
-# Vagas Truss.Tec
+# Vagas - Truss.TEC :computer:
 
 Analista Desenvolvedor Mobile (Frontend)
 
@@ -57,12 +57,12 @@ Desenvolvendo uma aplicação mobile que realize um _CRUD_ de _TODO's_, esta apl
         1. Sim - Exclui
         2. Não - Voltar
 5. **Documentação do Projeto**
-	1. Readme
-	2. Autor
+	1. README
 
 ### Observações
 
-O teste acima é o básico necessário nesta avaliação, mas podendo ser incrementado ações ou melhorias à critério do usuário, sendo considerado um plus na avaliação.
+O teste acima é o básico necessário nesta avaliação, mas podendo ser incrementado ações ou melhorias à critério do usuário, sendo considerado um plus na avaliação. Não se limite aos exemplos abaixo. SEJA CRIATIVO!
+
 Exemplos:
 
 * Log
