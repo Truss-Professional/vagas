@@ -44,6 +44,7 @@ Desenvolvendo uma aplicação mobile que realize um _CRUD_ de _TODO's_, esta apl
 	1.Não - Voltar  
 1. **Documentação do Projeto**
 	1. Readme
+	1. Autor
 	
 ### Observações
 O teste acima é o básico necessário nesta avaliação, mas podendo ser incrementado ações ou melhorias à critério do usuário, sendo considerado um plus na avaliação.  
