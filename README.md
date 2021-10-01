@@ -1,6 +1,8 @@
-# Vagas - Truss.TEC :computer:
+# Truss.TEC - Desafio Mobile :computer:
 
-Analista Desenvolvedor Mobile (Frontend)
+## Bem-vindo
+
+Uma marca impactante desde o visual, a TRUSS atinge consumidores em todo globo e nos 20 anos de história entrou no gosto mundial e é a número 1 das influencers e celebridades, além de contar com um extraordinário time de profissionais de alto gabarito. Consolidada e lembrada sempre pelos consumidores mais exigentes, a TRUSS não para de crescer e cada dia aumenta sua legião loucas pela marca!
 
 ## Requisitos
 
@@ -11,15 +13,16 @@ Linguagens: React Native e/ou Flutter e/ou Javascript;
 ## Sobre a Vaga
 
 Regime: CLT
-Vaga presencial em São José do Rio Preto-SP
+Vaga Presencial em São José do Rio Preto-SP
 Período: Integral (das 08:00 as 18:00 hr)
-Benefícios:
+
+## Benefícios
 
 * Refeição Local sem custo adicional
 * Plano de Saúde
-* Day-Off
+* B-Day-Off
 
-## Tecnologia / Ferramentas que você utilizará na Truss.TEC
+## Tecnologia / Ferramentas que você utilizará
 
 * Git
 * Gitflow
@@ -28,43 +31,41 @@ Benefícios:
 * Ansible
 * Testes
 
-## Teste desenvolvimento
+## Desafio
 
-Se você realmente deseja participar deste processo seletivo e deseja somar ao time Truss.TEC, realize um fork desse repositório.
+Se você deseja participar deste processo seletivo e deseja somar ao time Truss.TEC, realize um fork desse repositório.
 
 ### Hands on
 
-Desenvolvendo uma aplicação mobile que realize um _CRUD_ de _TODO's_, esta aplicação deverá conter:
+Desenvolvendo uma aplicação mobile que realize um _CRUD_ de _TODO's_.
 
-1. **Uma tela que listem todos os _TODO's_**
-    1. Botão de incluir TODO;
-    2. Botão de editar TODO;
-    3. Botão de remover TODO;
-2. **Uma tela de inclusão de _TODO's_**
-    1. Campo ID - int
-    2. Campo Descrição - Texto
-    3. Campo Prioridade - Enum
-        1. A - Alta Prioridade
-        2. B - Média Prioridade
-        3. C - Baixa Prioridade
-	4. Campo Data Prevista Conclusão - (preenchimento manual data)
-	5. Campo Data de Inclusão - (preenchimento automatico data)
-	6. Campo Imagem
-3. **Uma tela edição**
-    1. Demonstrar todos os campos, permitindo edição.
-4. **Uma tela exclusão**
-	1. Mostrar texto (pergunta), confirmando a exclusão pelo usuario;
-        1. Sim - Exclui
-        2. Não - Voltar
-5. **Documentação do Projeto**
-	1. README
+Campos da TODO:
 
-### Observações
+* Campo ID - Int
+* Campo Descrição - Texto
+* Campo Prioridade - Enum
+  * A - Alta Prioridade
+  * B - Média Prioridade
+  * C - Baixa Prioridade
+* Campo Data Prevista Conclusão - (preenchimento manual data)
+* Campo Data de Inclusão - (preenchimento automatico data)
+* Campo Imagem
+
+### O que iremos avaliar
+
+* Frenquencias/Qualidade dos commits
+* Documentação
+* Clean Code
+* Clean Architecture
+
+### Diferencial
 
 O teste acima é o básico necessário nesta avaliação, mas podendo ser incrementado ações ou melhorias à critério do usuário, sendo considerado um plus na avaliação. Não se limite aos exemplos abaixo. SEJA CRIATIVO!
 
 Exemplos:
 
-* Log
 * Testes
+* Deploy
+* Docker
+* Log
 * Personalizações (assets)
