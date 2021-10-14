@@ -1,4 +1,4 @@
-# Truss.TEC - Desafio Mobile :computer:
+# Truss.TEC - Desafio Mobile :computer
 
 ## Bem-vindo
 
@@ -6,15 +6,15 @@ Uma marca impactante desde o visual, a TRUSS atinge consumidores em todo globo e
 
 ## Requisitos
 
-Superior completo ou em andamento (último ano) em _Análise de Sistemas_ ou correlatas;
-Conhecimento em webservices (rest / soap);
-Linguagens: React Native e/ou Flutter e/ou Javascript;
+Superior completo ou em andamento (último ano) em _Análise de Sistemas_ ou correlatas;<br>
+Conhecimento em webservices (rest / soap);<br>
+Linguagens: React Native e/ou Flutter e/ou Javascript;<br>
 
 ## Sobre a Vaga
 
-Regime: CLT
-Vaga Presencial em São José do Rio Preto-SP
-Período: Integral (das 08:00 as 18:00 hr)
+Regime: CLT<br>
+Vaga Presencial em São José do Rio Preto-SP<br>
+Período: Integral (das 08:00 as 18:00 hr)<br>
 
 ## Benefícios
 
@@ -30,10 +30,11 @@ Período: Integral (das 08:00 as 18:00 hr)
 * Jira
 * Ansible
 * Testes
+* Docker
 
 ## Desafio
 
-Se você deseja participar deste processo seletivo e deseja somar ao time Truss.TEC, realize um fork desse repositório.
+Se você deseja participar deste processo seletivo e deseja somar ao time Truss.TEC, realize um **FORK** desse repositório, assim que finalizar o teste, nos envie um PR. Aguardamos seu PR.
 
 ### Hands on
 
