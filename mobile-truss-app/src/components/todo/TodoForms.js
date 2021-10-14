@@ -9,7 +9,7 @@ export default function TodoForm(props){
     })
 
     const handleChange = event => {
-        setInput(event.tareget.value)
+        setInput(event.target.value)
     }
 
     const handleSubmit = event => {

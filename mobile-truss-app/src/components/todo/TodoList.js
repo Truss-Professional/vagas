@@ -1,56 +1,77 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
+import TodoForm from './TodoForms'
+import Todo from './Todo'
+import { goBack } from '../../router/coordinator'
+import Logo from '../../assets/logo.png'
+import { ButtonContainer, DetailsFlexBox, Container } from '../styled/styled'
+import { Header }from '../../pages/styled/styled'
 
-export default function TodoForm(props){
-    const [input, setInput] = useState(props.edit ? props.edit.value : "")
-    const inputRef = useRef(null)
+export default function TodoList() {
+    const history = useHistory();
+    
+    const [todos, setTodos] = useState([])
 
-    useEffect(() => {
-        inputRef.current.focus()
-    })
-
-    const handleChange = event => {
-        setInput(event.tareget.value)
-    }
-
-    const handleSubmit = event => {
-        event.preventDefault()
-        
-        props.onSubmit({
-            id: Math.floor(Math.random() * 10000),
-            text: input
-        })
-        setInput('')
-    }
-
+    const addTodo = todo => {
+        if (!todo.text || /^\s*$/.test(todo.text)) {
+          return;
+        }
+    
+        const newTodos = [todo, ...todos];
+    
+        setTodos(newTodos);
+        console.log(...todos);
+    };
+    
+    const updateTodo = (todoId, newValue) => {
+        if (!newValue.text || /^\s*$/.test(newValue.text)) {
+          return;
+        }
+    
+        setTodos(prev => prev.map(item => (item.id === todoId ? newValue : item)));
+    };
+    
+    const removeTodo = id => {
+        const removedArr = [...todos].filter(todo => todo.id !== id);
+    
+        setTodos(removedArr);
+    };
+    
+    const completeTodo = id => {
+        let updatedTodos = todos.map(todo => {
+          if (todo.id === id) {
+            todo.isComplete = !todo.isComplete;
+          }
+          return todo;
+        });
+        setTodos(updatedTodos);
+    };
+    
     return (
-        <form onSubmit={handleSubmit} >
-            {props.edit ? (
-                    <>
-                        <input
-                            placeholder="Update your item"
-                            value={input}
-                            onChange={handleChange}
-                            name='text'
-                            ref={inputRef}
-                        />
-                        <button onClick={handleSubmit}>
-                            Update
+        <div>
+            <Header>
+                <ButtonContainer>
+                    <button
+                        onClick={()=>goBack(history)}
+                    >
+                            Go Back
                         </button>
-                    </>
-                ):(
-                <>
-                    <input
-                        placeholder='Add a Todo'
-                        value={input}
-                        onChange={handleChange}
-                        name='text'
-                        ref={inputRef}
+                    </ButtonContainer>
+                    <h2>App Mobile Truss</h2>
+                    <img src={Logo} />
+            </Header>
+            <Container>
+                <DetailsFlexBox>
+                    <h1>What's the Plan for Today?</h1>
+                    <TodoForm onSubmit={addTodo} />
+                    <Todo
+                        todos={todos}
+                        completeTodo={completeTodo}
+                        removeTodo={removeTodo}
+                        updateTodo={updateTodo}
                     />
-                    <button onClick={handleSubmit}>
-                        Add Todo
-                    </button>
-                </>
-            )}
-        </form>
-    )
+                </DetailsFlexBox>
+            </Container>
+        </div>
+    );
 }

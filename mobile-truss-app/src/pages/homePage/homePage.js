@@ -1,7 +1,8 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { Header , HomeFlexBox , ContainerHomePage } from '../styled/styled'
-import Logo from '../../assets/logohomecentro.png'
+import LogoHomeCentro from '../../assets/logohomecentro.png'
+import Logo from '../../assets/logo.png'
 import { goToListPage } from '../../router/coordinator'
 
 export default function HomePage() {
@@ -20,7 +21,7 @@ export default function HomePage() {
             </Header>
             <ContainerHomePage>
                 <HomeFlexBox>
-                    <img src={Logo} />
+                    <img src={LogoHomeCentro} />
                 </HomeFlexBox>
             </ContainerHomePage>
         </div>
