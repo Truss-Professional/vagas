@@ -1,10 +1,10 @@
 import React from 'react';
-
+import Router from './router/router'
 
 export default function App() {
   return (
     <div>
-      Mobile Truss
+      <Router />
     </div>
   );
 }
