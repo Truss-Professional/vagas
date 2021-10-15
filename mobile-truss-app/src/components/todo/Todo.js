@@ -3,6 +3,8 @@ import TodoForm from './TodoForms'
 import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
 
+/* componente que controla botões editar e excluir item */
+
 const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
     const [edit, setEdit] = useState({
         id: null,
