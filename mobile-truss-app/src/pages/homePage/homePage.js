@@ -1,6 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { Header , HomeFlexBox , ContainerHomePage } from '../styled/styled'
+import { ButtonContainer } from '../../components/styled/styled'
 import LogoHomeCentro from '../../assets/logohomecentro.png'
 import Logo from '../../assets/logo.png'
 import { goToListPage } from '../../router/coordinator'
@@ -11,12 +12,14 @@ export default function HomePage() {
     return (
         <div>
             <Header>
-                <button 
-                onClick={()=>goToListPage(history)}
-                >
-                Ver Lista
-                </button>
-                <h2>App Mobile Truss</h2>
+                <ButtonContainer>
+                    <button 
+                    onClick={()=>goToListPage(history)}
+                    >
+                    Go List
+                    </button>
+                </ButtonContainer>
+                <h2>Mobile Truss App</h2>
                 <img src={Logo} />
             </Header>
             <ContainerHomePage>

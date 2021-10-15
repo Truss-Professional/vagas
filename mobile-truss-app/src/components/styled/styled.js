@@ -9,7 +9,7 @@ export const ButtonContainer = styled.div`
     text-decoration: none;
     list-style: none;
     margin: 5px;
-    padding: 12px;
+    padding: 10px;
   }
 `;
 
@@ -26,7 +26,7 @@ export const DetailsFlexBox = styled.div`
         height: 50px;
         width: 90px;
         margin: 7px;
-        border-radius: 15px;
+        border-radius: 10px;
 
         :hover {
           cursor: pointer;
@@ -37,7 +37,7 @@ export const DetailsFlexBox = styled.div`
 
 export const Container = styled.div`
     display: flex;
-    padding-top: 9%;
+    padding-top: 30%;
     flex-direction: column;
     justify-content: center;
     text-align: center;

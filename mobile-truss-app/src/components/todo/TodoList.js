@@ -9,7 +9,7 @@ import { Header }from '../../pages/styled/styled'
 
 export default function TodoList() {
     const history = useHistory();
-    
+
     const [todos, setTodos] = useState([])
 
     const addTodo = todo => {
@@ -54,10 +54,10 @@ export default function TodoList() {
                     <button
                         onClick={()=>goBack(history)}
                     >
-                            Go Back
+                        Go Back
                         </button>
                     </ButtonContainer>
-                    <h2>App Mobile Truss</h2>
+                    <h2>Mobile Truss App</h2>
                     <img src={Logo} />
             </Header>
             <Container>
