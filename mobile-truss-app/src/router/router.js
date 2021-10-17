@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import HomePage from '../pages/homePage/homePage'
 import TodoList from "../components/todo/TodoList";
 
+
 const Router = () => (
   <BrowserRouter>
         <Switch>
@@ -15,7 +16,9 @@ const Router = () => (
             />
 
             <Route>
-              <div>"Erro 404 - Esta Pagina não existe!" </div>
+              <iframe src="https://giphy.com/embed/dsWOUTBz5aae8ET8Ss" 
+                  width="305" height="380" frameBorder="0" class="giphy-embed" allowcenterscreen>
+              </iframe>
             </Route>
     </Switch>
   </BrowserRouter>
