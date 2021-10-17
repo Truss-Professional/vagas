@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react'
-
+import { InputRadio, ContainerInput, ImagemInput, InputDate } from '../styled/styled'
+import DatePicker from 'react-datepicker'
 
 /*componente que controla os input */
 
 export default function TodoForm(props){
     const [input, setInput] = useState(props.edit ? props.edit.value : "")
+    const [ startDate, setStartDate ] = useState(new Date())
     const inputRef = useRef(null)
 
     let priority = " "
@@ -45,7 +47,6 @@ export default function TodoForm(props){
         priorityData = value
     })
 
-
     return (
         <form onSubmit={handleSubmit} >
             {props.edit ? (
@@ -70,50 +71,65 @@ export default function TodoForm(props){
                         name='text'
                         ref={inputRef}
                     />
-                    <div>
-                        What are your priorities:
-                        <div>
-                            <label>
-                                <input
-                                    type="radio" 
-                                    id="1" 
-                                    name="priority" 
-                                    value="high"
-                                    onChange={(e) => HandlePriorityChange(e)}
-                                />
-                                High
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input
-                                    type="radio" 
-                                    id="2" 
-                                    name="priority" 
-                                    value="medium"
-                                    onChange={(e) => HandlePriorityChange(e)}
-                                />
-                                Medium
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input
-                                    type="radio" 
-                                    id="3" 
-                                    name="priority" 
-                                    value="low "
-                                    onChange={(e) => HandlePriorityChange(e)}
-                                />
-                                Low
-                            </label>
-                        </div>
-                    </div>
-                    <button onClick={handleSubmit}>
+                    <ContainerInput>
+                            <h3>What are your priorities:</h3>
+                        <InputRadio>
+                            <div>
+                                <label>
+                                    <input
+                                        type="radio" 
+                                        id="1" 
+                                        name="priority" 
+                                        value="high"
+                                        onChange={(e) => HandlePriorityChange(e)}
+                                    />
+                                    A - High
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input
+                                        type="radio" 
+                                        id="2" 
+                                        name="priority" 
+                                        value="medium"
+                                        onChange={(e) => HandlePriorityChange(e)}
+                                    />
+                                    B - Medium
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input
+                                        type="radio" 
+                                        id="3" 
+                                        name="priority" 
+                                        value="low "
+                                        onChange={(e) => HandlePriorityChange(e)}
+                                    />
+                                    C - Low
+                                </label>
+                            </div>
+                        </InputRadio>
+                        <InputDate>
+                            <DatePicker
+                                selected = {startDate} 
+                                onChange = { (date) => setStartDate(date)}
+                            />
+                        </InputDate>
+                        <ImagemInput>
+                            <div>
+                                <label for='arquivo'>Selecione a imagem:</label>
+                            </div>
+                            <div>
+                                <input type='file' id='arquivo' name='arquivo' multiple />
+                            </div>
+                        </ImagemInput>
+                    </ContainerInput>
+                    <button onClick={handleSubmit} onChange={(e) => HandlePriorityChange(e)}>
                         Add Todo
                     </button>
                 </>
-
             )}
         </form>
     )

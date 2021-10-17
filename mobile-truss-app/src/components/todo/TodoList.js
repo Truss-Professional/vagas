@@ -33,7 +33,7 @@ export default function TodoList() {
     
     const removeTodo = id => {
         const removedArr = [...todos].filter(todo => todo.id !== id);
-    
+        alert("")
         setTodos(removedArr);
     };
     
@@ -62,7 +62,7 @@ export default function TodoList() {
             </Header>
             <Container>
                 <DetailsFlexBox>
-                    <h1>What's the Plan for Today?</h1>
+                    <h2>What's the Plan for Today?</h2>
                     <TodoForm onSubmit={addTodo} />
                     <Todo
                         todos={todos}
