@@ -112,6 +112,7 @@ export default function TodoForm(props){
                             </div>
                         </InputRadio>
                         <InputDate>
+                            Date:
                             <DatePicker
                                 selected = {startDate} 
                                 onChange = { (date) => setStartDate(date)}
@@ -119,7 +120,7 @@ export default function TodoForm(props){
                         </InputDate>
                         <ImagemInput>
                             <div>
-                                <label for='arquivo'>Selecione a imagem:</label>
+                                <label for='arquivo'>Select an Image:</label>
                             </div>
                             <div>
                                 <input type='file' id='arquivo' name='arquivo' multiple />
