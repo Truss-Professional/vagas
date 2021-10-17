@@ -33,7 +33,7 @@ export default function TodoList() {
     
     const removeTodo = id => {
         const removedArr = [...todos].filter(todo => todo.id !== id);
-        alert("")
+        alert("Really want to delete?")
         setTodos(removedArr);
     };
     

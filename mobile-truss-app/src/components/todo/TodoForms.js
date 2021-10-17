@@ -32,6 +32,7 @@ export default function TodoForm(props){
             text: input
         })
         setInput('')
+        alert("Task added Successfully!!")
     }
 
     /*
@@ -127,7 +128,7 @@ export default function TodoForm(props){
                             </div>
                         </ImagemInput>
                     </ContainerInput>
-                    <button onClick={handleSubmit} onChange={(e) => HandlePriorityChange(e)}>
+                    <button onClick={handleSubmit}>
                         Add Todo
                     </button>
                 </>
