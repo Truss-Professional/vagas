@@ -1,3 +1,4 @@
+
 ## Projeto Mobile Truss App
 
 - Este é um projeto de FrontEnd Web utilizando React.js, styled components, 
@@ -22,6 +23,10 @@
 
 - Estilização não responsiva (desktop first);
 - Campo Adicionar data.
+
+                                            Para rodar na máquina 💻:
+                                                  npm install 📌
+                                                  npm start 📌
 
 ## Link do Surge
 
