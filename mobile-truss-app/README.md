@@ -33,7 +33,7 @@
 https://mobileapptruss.surge.sh/
 
 
-   ![truss](https://user-images.githubusercontent.com/83045484/137663204-98a6ea03-d0bb-4a00-b882-f4298a738268.jpg)
+![truss](https://user-images.githubusercontent.com/83045484/137666043-446fa37b-0386-4e74-8322-7db0e4e21245.jpg)
 
 
 
