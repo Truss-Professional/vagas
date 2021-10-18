@@ -27,5 +27,8 @@
 
 https://mobileapptruss.surge.sh/
 
-https://www.google.com/url?sa=i&url=https%3A%2F%2Famostragratuita.com.br%2Ftruss-amostra-gratis-2020-solicite%2F&psig=AOvVaw1DrlLPRGf0v1QmfLIGjNnk&ust=1634612580544000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiGsIub0vMCFQAAAAAdAAAAABAD
+
+   ![truss](https://user-images.githubusercontent.com/83045484/137663204-98a6ea03-d0bb-4a00-b882-f4298a738268.jpg)
+
+
 
