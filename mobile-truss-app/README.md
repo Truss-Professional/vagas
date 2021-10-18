@@ -1,6 +1,6 @@
 # Access to the app via the link
 
-mobileapptruss.surge.sh
+https://mobileapptruss.surge.sh/
 
 ## Available Scripts
 
