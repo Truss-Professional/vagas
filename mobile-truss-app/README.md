@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Access to the app via the link
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+mobileapptruss.surge.sh
 
 ## Available Scripts
 
