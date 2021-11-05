@@ -1,4 +1,4 @@
-# Truss.TEC - Desafio Mobile :computer
+# Truss.TEC - Desafio Mobile :computer:
 
 ## Bem-vindo
 
@@ -34,7 +34,7 @@ Período: Integral (das 08:00 as 18:00 hr)<br>
 
 ## Desafio
 
-Se você deseja participar deste processo seletivo e deseja somar ao time Truss.TEC, realize um **FORK** desse repositório, assim que finalizar o teste, nos envie um PR. Aguardamos seu PR.
+Se você deseja participar deste processo seletivo e deseja somar ao time Truss.TEC, realize um **FORK** desse repositório, assim que finalizar o teste, nos envie um PR para podermos avaliar. Aguardamos seu PR.
 
 ### Hands on
 
