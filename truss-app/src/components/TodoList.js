@@ -58,7 +58,7 @@ const TodoList = () => {
             </Header>
             <TodoContainer>
                 <img src={TodoImg}/>
-                <h1>App Mobile Truss</h1>
+                <h1>Todo List Truss</h1>
                 <div>
                     <h1>What's the Plan for today?</h1>
                     <TodoForm onSubmit={addTodo}/>
@@ -74,8 +74,8 @@ const TodoList = () => {
                 <label for="data">Selecione uma data:</label>
                 <input type="date" id="data" name="data"/>
                 <input type="submit" value="Exibir data selecionada" />
+                <h2 id="resultado"></h2>
             </form>
-            <h2 id="resultado"></h2>
         </div>
     )
 }
