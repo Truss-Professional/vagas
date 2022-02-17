@@ -23,3 +23,14 @@ export const List = styled.div`
     font-size: 16px;
     margin: 5px;
 `
+
+//TodoForms
+
+export const ButtoRadio = styled.div`
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+`

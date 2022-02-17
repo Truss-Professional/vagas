@@ -16,13 +16,12 @@ const Home = () => {
                 <button
                     onClick={goToTodoList}
                     >
-                    Ver TodoList
+                    Ver List
                 </button>
                 <img src={LogoHeader}/>
             </Header>
             <HomeFlexBox>
                 <img src={Logo}/>
-                <h2>App Mobile Truss</h2>
             </HomeFlexBox>
 
         </div>

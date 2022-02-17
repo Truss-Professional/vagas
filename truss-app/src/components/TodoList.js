@@ -6,9 +6,12 @@ import TodoImg from "../assets/todo.png"
 import { TodoContainer } from "./styled"
 import { Header } from "../pages/styled";
 import LogoHeader from "../assets/logo.png"
+import DatePicker from "react-datepicker"
+import "react-datepicker/dist/react-datepicker.css";
 
 const TodoList = () => {
     const [todos, setTodos] = useState([])
+    const [startDate, setStartDate] = useState(new Date());
 
     const navigate = useNavigate()
 
@@ -52,13 +55,20 @@ const TodoList = () => {
                 <button
                     onClick={goToHome}
                 >
-                    Ver Home
+                    Home
                 </button>
                 <img src={LogoHeader}/>
             </Header>
             <TodoContainer>
                 <img src={TodoImg}/>
                 <h1>Todo List Truss</h1>
+                <h2>Data
+                    <DatePicker
+                        wrapperClassName="datePicker" dateFormat="dd/MM/yyyy"
+                        selected={startDate}
+                        onChange={(date) => setStartDate(date)}
+                    />
+                </h2>
                 <div>
                     <h1>What's the Plan for today?</h1>
                     <TodoForm onSubmit={addTodo}/>
@@ -70,12 +80,6 @@ const TodoList = () => {
                         />
                 </div>
             </TodoContainer>
-            <form>
-                <label for="data">Selecione uma data:</label>
-                <input type="date" id="data" name="data"/>
-                <input type="submit" value="Exibir data selecionada" />
-                <h2 id="resultado"></h2>
-            </form>
         </div>
     )
 }
